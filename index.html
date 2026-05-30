@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Leverage Strategic | Partner-Led Strategic Finance & Transaction Advisory</title>
+<meta name="description" content="Partner-led strategic finance and transaction advisory for founder-led businesses across Canada, United States, and United Kingdom."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#07090F;
+  --navy-2:#0C1118;
+  --navy-3:#101520;
+  --navy-4:#161E2E;
+  --gold:#C9A84C;
+  --gold-light:#DEBB6A;
+  --gold-dim:#7A6030;
+  --gold-faint:rgba(201,168,76,0.07);
+  --gold-border:rgba(201,168,76,0.22);
+  --white:#F5F2EC;
+  --off-white:#DDD8CE;
+  --muted:#5A6882;
+  --muted-2:#7A8BA8;
+  --border:#16202F;
+  --border-2:#1C2A3C;
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --sans:'DM Sans',system-ui,sans-serif;
+  --mono:'DM Mono',monospace;
+}
+html{scroll-behavior:smooth}
+body{background:var(--navy);color:var(--white);font-family:var(--sans);font-size:16px;line-height:1.6;overflow-x:hidden}
+::-webkit-scrollbar{width:4px}
+::-webkit-scrollbar-track{background:var(--navy-2)}
+::-webkit-scrollbar-thumb{background:var(--gold-dim);border-radius:4px}
+body::after{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");pointer-events:none;z-index:9999;opacity:.5}
+
+/* ── FADE-UP ── */
+.fade-up{opacity:0;transform:translateY(24px);transition:opacity .65s ease,transform .65s ease}
+.fade-up.visible{opacity:1;transform:none}
+
+/* ── 3D TILT ── */
+.tilt-card{transform-style:preserve-3d;transition:transform .4s ease,box-shadow .4s ease;will-change:transform}
+
+/* ── NAV ── */
+nav{position:sticky;top:0;z-index:100;background:rgba(7,9,15,0.95);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid var(--border)}
+.nav-inner{max-width:1180px;margin:0 auto;padding:0 2.5rem;display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-family:var(--serif);font-size:19px;font-weight:600;color:var(--white);letter-spacing:0.05em;text-decoration:none;display:flex;align-items:center;gap:0}
+.logo em{color:var(--gold);font-style:normal}
+.logo-pipe{display:inline-block;width:1px;height:14px;background:var(--border-2);margin:0 13px;vertical-align:middle}
+.logo-sub{font-family:var(--sans);font-size:9px;font-weight:400;color:var(--muted);letter-spacing:0.12em;text-transform:uppercase}
+.nav-links{display:flex;align-items:center;gap:2.25rem}
+.nav-links a{font-size:12px;font-weight:500;color:var(--muted);text-decoration:none;letter-spacing:0.07em;text-transform:uppercase;cursor:pointer;transition:color .2s}
+.nav-links a:hover,.nav-links a.active{color:var(--white)}
+.nav-cta{padding:9px 22px;background:transparent;color:var(--gold);font-size:12px;font-weight:600;border:1px solid var(--gold-border);border-radius:2px;cursor:pointer;letter-spacing:0.06em;text-decoration:none;transition:background .2s,color .2s}
+.nav-cta:hover{background:var(--gold-faint)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.hamburger span{width:20px;height:1px;background:var(--white);display:block;transition:.3s}
+.mobile-menu{display:none;background:var(--navy-2);border-top:1px solid var(--border);padding:1.5rem 2.5rem}
+.mobile-menu.open{display:block}
+.mobile-menu a{display:block;padding:.7rem 0;font-size:13px;color:var(--muted);text-decoration:none;border-bottom:1px solid var(--border);cursor:pointer;transition:color .2s}
+.mobile-menu a:hover{color:var(--white)}
+.mobile-menu .mob-cta{display:block;text-align:center;margin-top:1.25rem;padding:13px;background:transparent;color:var(--gold);font-size:13px;font-weight:600;border:1px solid var(--gold-border);border-radius:2px;text-decoration:none;cursor:pointer;letter-spacing:0.05em}
+
+/* ── LAYOUT ── */
+.wrap{max-width:1180px;margin:0 auto;padding:0 2.5rem}
+section{padding:5.5rem 0;position:relative}
+.sec-label{font-size:10px;font-weight:500;color:var(--gold);letter-spacing:0.2em;text-transform:uppercase;margin-bottom:.75rem}
+.rule{width:40px;height:1px;background:var(--gold);margin:1.25rem 0 2rem}
+h2{font-family:var(--serif);font-size:clamp(34px,4.5vw,52px);font-weight:600;line-height:1.08;letter-spacing:-0.01em}
+h3{font-family:var(--serif);font-size:clamp(22px,3vw,30px);font-weight:600;line-height:1.15}
+.divider{width:100%;height:1px;background:var(--border)}
+.dark-section{background:var(--navy-2)}
+
+/* ── HERO ── */
+.hero{min-height:92vh;display:flex;align-items:center;padding:7rem 0 5.5rem;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-100px;right:-60px;width:640px;height:640px;background:radial-gradient(circle,rgba(201,168,76,0.055) 0%,transparent 66%);pointer-events:none;animation:glow-pulse 8s ease-in-out infinite}
+.hero::after{content:'';position:absolute;bottom:-80px;left:28%;width:420px;height:420px;background:radial-gradient(circle,rgba(30,60,120,0.04) 0%,transparent 65%);pointer-events:none}
+@keyframes glow-pulse{0%,100%{opacity:.7;transform:scale(1)}50%{opacity:1;transform:scale(1.06)}}
+.hero-orb{position:absolute;top:16%;right:7%;width:240px;height:240px;border-radius:50%;background:conic-gradient(from 200deg,rgba(201,168,76,0.08),rgba(30,60,120,0.04),rgba(201,168,76,0.08));animation:orb-spin 20s linear infinite;pointer-events:none;filter:blur(1px)}
+@keyframes orb-spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+.hero-orb-inner{position:absolute;inset:22px;border-radius:50%;border:1px solid rgba(201,168,76,0.13)}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border:1px solid var(--gold-border);border-radius:100px;font-size:10px;font-weight:500;color:var(--gold);letter-spacing:0.14em;text-transform:uppercase;margin-bottom:2.5rem;animation:tag-in .8s ease both}
+.hero-tag::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--gold);flex-shrink:0;animation:dot-blink 2.5s ease-in-out infinite}
+@keyframes dot-blink{0%,100%{opacity:1}50%{opacity:.3}}
+@keyframes tag-in{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:translateY(0)}}
+h1{font-family:var(--serif);font-size:clamp(50px,7.5vw,88px);font-weight:600;line-height:.97;letter-spacing:-0.015em;margin-bottom:2rem;animation:h1-in 1s ease .15s both}
+@keyframes h1-in{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+h1 em{color:var(--gold);font-style:italic}
+.hero-sub{font-size:17px;color:var(--muted-2);max-width:500px;line-height:1.78;margin-bottom:3rem;font-weight:300;animation:h1-in 1s ease .3s both}
+.hero-actions{display:flex;gap:1rem;align-items:center;flex-wrap:wrap;margin-bottom:4rem;animation:h1-in 1s ease .45s both}
+.btn-gold{padding:15px 34px;background:var(--gold);color:var(--navy);font-size:13px;font-weight:600;border:none;border-radius:2px;cursor:pointer;letter-spacing:0.05em;text-decoration:none;display:inline-block;transition:background .2s,transform .15s,box-shadow .2s}
+.btn-gold:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 8px 28px rgba(201,168,76,0.22)}
+.btn-outline{padding:15px 34px;background:transparent;color:var(--off-white);font-size:13px;font-weight:500;border:1px solid var(--border-2);border-radius:2px;cursor:pointer;letter-spacing:0.04em;text-decoration:none;display:inline-block;transition:border-color .2s,transform .15s}
+.btn-outline:hover{border-color:var(--muted);transform:translateY(-1px)}
+.hero-pillars{display:flex;gap:2.5rem;flex-wrap:wrap;animation:h1-in 1s ease .6s both}
+.pillar{font-size:12px;font-weight:400;color:var(--muted);display:flex;align-items:center;gap:7px;transition:color .2s}
+.pillar:hover{color:var(--off-white)}
+.pillar::before{content:'';width:14px;height:1px;background:var(--gold)}
+
+/* hero right cards */
+.hero-grid{display:grid;grid-template-columns:1fr 380px;gap:5rem;align-items:center}
+.hero-right{display:flex;flex-direction:column;gap:14px;animation:h1-in .9s ease .5s both}
+.hero-scale-card{background:rgba(201,168,76,0.06);border:1px solid var(--gold-border);padding:24px 26px}
+.hsc-lbl{font-size:10px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.hsc-models{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,0.05)}
+.hsc-model{background:rgba(7,9,15,0.55);padding:14px 16px}
+.hsc-model-name{font-size:12px;font-weight:500;color:var(--white);margin-bottom:4px;line-height:1.3}
+.hsc-model-desc{font-size:11px;color:var(--muted);line-height:1.4}
+.hero-cred-card{background:rgba(255,255,255,0.025);border:1px solid var(--border-2);padding:24px 26px}
+.hcc-lbl{font-size:10px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.hcc-item{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid var(--border)}
+.hcc-item:last-child{border-bottom:none;padding-bottom:0}
+.hcc-item:first-of-type{padding-top:0}
+.hcc-dot{width:4px;height:4px;background:var(--gold);border-radius:50%;margin-top:8px;flex-shrink:0}
+.hcc-text{font-size:12px;line-height:1.55;color:var(--muted-2);font-weight:300}
+.hcc-text strong{color:var(--white);font-weight:500}
+
+/* ── TRUST STRIP ── */
+.trust-strip{background:var(--navy-2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:1.1rem 0}
+.trust-strip-inner{max-width:1180px;margin:0 auto;padding:0 2.5rem;display:flex;align-items:center;gap:0;flex-wrap:wrap}
+.ts-label{font-size:10px;color:var(--muted);letter-spacing:0.14em;text-transform:uppercase;font-weight:500;white-space:nowrap;padding-right:2.25rem;border-right:1px solid var(--border-2);margin-right:2.25rem}
+.ts-logos{display:flex;align-items:center;gap:2.75rem;flex-wrap:wrap}
+.ts-logo{font-size:11px;font-weight:600;color:var(--muted);letter-spacing:0.1em;text-transform:uppercase;opacity:.65;transition:opacity .2s;white-space:nowrap}
+.ts-logo:hover{opacity:1}
+.ts-logo span{color:var(--off-white)}
+
+/* ── GEO STRIP ── */
+.geo-strip{background:var(--navy);border-bottom:1px solid var(--border);padding:.8rem 0}
+.geo-inner{max-width:1180px;margin:0 auto;padding:0 2.5rem;display:flex;align-items:center;gap:0;flex-wrap:wrap}
+.geo-label{font-size:10px;font-weight:500;color:var(--gold);letter-spacing:0.18em;text-transform:uppercase;white-space:nowrap;padding-right:2.25rem;border-right:1px solid var(--border-2);margin-right:0}
+.geo-markets{display:flex;flex:1;flex-wrap:wrap}
+.geo-market{padding:0 2.25rem;border-right:1px solid var(--border-2)}
+.geo-market:last-child{border-right:none}
+.geo-market-name{font-size:12px;font-weight:500;color:var(--white);margin-bottom:1px}
+.geo-market-note{font-size:10px;color:var(--muted);letter-spacing:.02em}
+
+/* ── WHAT CLIENTS ENGAGE US FOR ── */
+.stats-bar{background:var(--navy-2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:1.5rem 0}
+
+/* ── PROBLEM GRID ── */
+.problem-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border)}
+.prob-card{background:var(--navy);padding:2.5rem;border-top:2px solid transparent;transition:border-color .3s,transform .3s,box-shadow .3s}
+.prob-card:nth-child(1){border-top-color:var(--gold-dim)}
+.prob-card:nth-child(2){border-top-color:var(--gold)}
+.prob-card:nth-child(3){border-top-color:var(--gold-light)}
+.prob-card:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(0,0,0,.3)}
+.prob-card h4{font-size:16px;font-weight:600;margin-bottom:.6rem;color:var(--white)}
+.prob-card p{font-size:14px;color:var(--muted-2);line-height:1.75;font-weight:300}
+.solution-bar{margin-top:2.5rem;padding:1.75rem 2.5rem;border:1px solid var(--gold-border);background:var(--gold-faint);text-align:center}
+.solution-bar p{font-family:var(--serif);font-size:24px;color:var(--white);font-weight:500;line-height:1.4}
+.solution-bar span{color:var(--gold)}
+
+/* ── SITS GRID ── */
+.sits-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);margin-top:3rem}
+.sit{background:var(--navy);padding:2.25rem;display:flex;flex-direction:column;gap:.9rem;transition:background .2s}
+.sit:hover{background:rgba(201,168,76,0.03)}
+.sit-n{font-family:var(--mono);font-size:10px;color:var(--gold);letter-spacing:0.12em}
+.sit h4{font-size:15px;font-weight:600;color:var(--white)}
+.sit p{font-size:14px;color:var(--muted-2);line-height:1.7;font-weight:300;flex:1}
+.sit-arrow{font-size:12px;color:var(--gold);font-weight:500;letter-spacing:0.04em}
+
+/* ── MODES ── */
+.modes-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);margin-top:3.5rem}
+.mode-card{background:var(--navy-2);padding:2.75rem 2.5rem;border-top:2px solid transparent;transition:border-color .3s}
+.mode-card:nth-child(1){border-top-color:var(--gold-dim)}
+.mode-card:nth-child(2){border-top-color:var(--gold)}
+.mode-tag{font-size:10px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1.25rem}
+.mode-card h4{font-family:var(--serif);font-size:26px;font-weight:600;color:var(--white);margin-bottom:.9rem;line-height:1.15}
+.mode-card p{font-size:14px;color:var(--muted-2);line-height:1.75;font-weight:300;margin-bottom:1.5rem}
+.mode-list{list-style:none;display:flex;flex-direction:column;gap:.5rem}
+.mode-list li{font-size:13px;color:var(--muted-2);padding-left:1.4rem;position:relative;font-weight:300;line-height:1.5}
+.mode-list li::before{content:'—';position:absolute;left:0;color:var(--gold-dim);font-size:11px}
+.mode-note{margin-top:2.5rem;padding:1.5rem 2rem;border:1px solid var(--border-2);border-left:2px solid var(--gold);background:var(--navy-2)}
+.mode-note p{font-family:var(--serif);font-size:19px;color:var(--white);font-weight:500;line-height:1.4}
+.mode-note p span{color:var(--gold)}
+
+/* ── SERVICES ── */
+.services-intro{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;margin-bottom:3.5rem}
+.pillar-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);margin-bottom:1px}
+.pillar-cell{background:var(--navy-2);padding:1.75rem 2rem;border-top:2px solid var(--gold-dim)}
+.pillar-cell:nth-child(2){border-top-color:var(--gold)}
+.pillar-cell:nth-child(3){border-top-color:var(--gold-light)}
+.pillar-name{font-size:10px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:.9rem}
+.pillar-svcs{list-style:none;display:flex;flex-direction:column;gap:.35rem}
+.pillar-svcs li{font-size:12px;color:var(--muted-2);font-weight:300;padding-left:1rem;position:relative}
+.pillar-svcs li::before{content:'·';position:absolute;left:0;color:var(--gold);font-size:14px;line-height:1.2}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);margin-bottom:1px}
+.svc-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border)}
+.svc-card{background:var(--navy);padding:2.5rem 2rem;transition:background .2s;cursor:pointer}
+.svc-card:hover{background:var(--navy-2)}
+.svc-tier{font-size:10px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
+.svc-card h4{font-family:var(--serif);font-size:22px;font-weight:600;color:var(--white);margin-bottom:.75rem;line-height:1.15}
+.svc-card p{font-size:13px;color:var(--muted-2);line-height:1.7;font-weight:300;margin-bottom:1.25rem}
+.svc-link{font-size:12px;font-weight:500;color:var(--gold);letter-spacing:.05em;display:inline-flex;align-items:center;gap:6px;transition:gap .2s}
+.svc-link:hover{gap:10px}
+
+/* ── INDUSTRIES ── */
+.ind-layout{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;margin-top:3.5rem}
+.ind-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border)}
+.ind-cell{background:var(--navy-2);padding:1.75rem 1.75rem;transition:background .2s}
+.ind-cell:hover{background:var(--navy-3)}
+.ind-name{font-size:14px;font-weight:600;color:var(--white);margin-bottom:.35rem}
+.ind-note{font-size:12px;color:var(--muted-2);font-weight:300;line-height:1.5}
+.exp-list{list-style:none;display:flex;flex-direction:column;margin-top:.5rem}
+.exp-list li{padding:1rem 0;border-bottom:1px solid var(--border);display:flex;gap:1.25rem;align-items:flex-start}
+.exp-list li:last-child{border-bottom:none}
+.exp-co{font-family:var(--mono);font-size:10px;color:var(--gold-dim);letter-spacing:0.1em;min-width:70px;padding-top:2px;flex-shrink:0}
+.exp-text{font-size:13px;color:var(--muted-2);line-height:1.6;font-weight:300}
+.exp-text strong{color:var(--off-white);font-weight:500}
+
+/* ── WORK ── */
+.work-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);margin-top:3.5rem}
+.work-card{background:var(--navy-2);padding:2.5rem 2.25rem;transition:background .2s}
+.work-card:hover{background:var(--navy-3)}
+.work-tag{font-size:10px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:.4rem}
+.work-co{font-size:12px;color:var(--muted);margin-bottom:1.25rem;font-weight:300}
+.work-card h4{font-family:var(--serif);font-size:20px;font-weight:600;color:var(--white);line-height:1.25;margin-bottom:1.5rem}
+.work-label{font-size:10px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);margin-bottom:.35rem}
+.work-text{font-size:13px;color:var(--muted-2);line-height:1.68;font-weight:300;margin-bottom:1rem}
+.work-result{margin-top:1.25rem;padding:1.1rem 1.5rem;border:1px solid var(--border-2);border-left:2px solid var(--gold);background:var(--navy)}
+.work-result p{font-size:13px;color:var(--off-white);line-height:1.65;font-weight:300}
+
+/* ── PROCESS ── */
+.process-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;margin-top:3.5rem;align-items:start}
+.steps{display:flex;flex-direction:column}
+.step{display:flex;gap:1.75rem;padding:2rem 0;border-bottom:1px solid var(--border);transition:padding-left .25s}
+.step:last-child{border-bottom:none}
+.step:hover{padding-left:.75rem}
+.step-n{font-family:var(--mono);font-size:10px;color:var(--gold);letter-spacing:0.12em;width:28px;flex-shrink:0;padding-top:3px}
+.step h4{font-size:15px;font-weight:600;color:var(--white);margin-bottom:.4rem}
+.step p{font-size:13px;color:var(--muted-2);line-height:1.7;font-weight:300}
+.sticky-card{position:sticky;top:6rem;background:var(--navy-2);border:1px solid var(--border)}
+.sc-label{font-size:10px;color:var(--gold);font-weight:500;letter-spacing:0.14em;text-transform:uppercase;padding:1.75rem 2rem 0}
+.sc-row{display:flex;justify-content:space-between;align-items:center;padding:.85rem 2rem;border-bottom:1px solid var(--border)}
+.sc-row:last-of-type{border-bottom:none}
+.sc-key{font-size:13px;color:var(--muted-2);font-weight:300}
+.sc-val{font-family:var(--mono);font-size:12px;color:var(--white);font-weight:500}
+.sc-val.gold{color:var(--gold)}
+.sc-val.green{color:#52C77A}
+.sc-cta{padding:1.75rem 2rem;border-top:1px solid var(--border)}
+
+/* ── ABOUT ── */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
+.bg-table{width:100%;border-collapse:collapse;margin-bottom:2rem}
+.bg-table tr{border-bottom:1px solid var(--border)}
+.bg-table td{padding:1.1rem 0;font-size:13px;vertical-align:top;font-weight:300}
+.bg-table td:first-child{font-family:var(--mono);font-size:10px;color:var(--gold-dim);letter-spacing:0.1em;width:80px;padding-right:1rem;padding-top:1.3rem}
+.bg-table td strong{display:block;font-size:13px;color:var(--white);font-weight:500;margin-bottom:2px}
+.bg-table td span{font-size:12px;color:var(--muted-2)}
+.creds-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border)}
+.cred-cell{background:var(--navy-2);padding:1.25rem 1.5rem}
+.cred-name{font-size:13px;font-weight:500;color:var(--white);margin-bottom:3px}
+.cred-inst{font-size:11px;color:var(--muted);font-weight:300}
+
+/* ── FIRM VISION ── */
+.firm-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);margin-top:3.5rem;margin-bottom:3rem}
+.firm-card{background:var(--navy-2);padding:2.5rem 2rem;border-top:2px solid var(--border)}
+.firm-card:nth-child(1){border-top-color:var(--gold-dim)}
+.firm-card:nth-child(2){border-top-color:var(--gold)}
+.firm-card:nth-child(3){border-top-color:var(--gold-light)}
+.firm-year{font-family:var(--mono);font-size:10px;color:var(--gold-dim);letter-spacing:0.16em;margin-bottom:1rem}
+.firm-card h4{font-family:var(--serif);font-size:22px;font-weight:600;color:var(--white);margin-bottom:.75rem;line-height:1.2}
+.firm-card p{font-size:13px;color:var(--muted-2);line-height:1.7;font-weight:300}
+.vision-quote{padding:2.75rem 3rem;border:1px solid var(--gold-border);background:var(--gold-faint);margin-bottom:2.5rem}
+.vq-inner{max-width:700px;margin:0 auto;text-align:center}
+.vq-inner .sec-label{justify-content:center;margin-bottom:1.25rem;letter-spacing:.18em}
+blockquote{font-family:var(--serif);font-size:clamp(20px,2.5vw,28px);font-weight:500;font-style:italic;color:var(--white);line-height:1.55;margin-bottom:.9rem}
+blockquote em{color:var(--gold);font-style:normal}
+.vq-attr{font-size:12px;color:var(--muted);letter-spacing:0.08em}
+
+/* Leverage Group block */
+.group-block{display:grid;grid-template-columns:auto 1fr 1fr;border:1px solid var(--border-2);margin-top:2.5rem}
+.group-lbl{padding:2rem 2.25rem;border-right:1px solid var(--border);display:flex;align-items:center}
+.group-lbl-text{font-size:10px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);white-space:nowrap}
+.group-entity{padding:2rem 2.25rem;border-right:1px solid var(--border)}
+.group-entity:last-child{border-right:none}
+.group-entity-name{font-size:14px;font-weight:500;color:var(--white);margin-bottom:4px}
+.group-entity-desc{font-size:12px;color:var(--muted-2);font-weight:300;line-height:1.5;margin-bottom:8px}
+.group-entity-link{font-size:11px;color:var(--gold);text-decoration:none;opacity:.7;letter-spacing:.04em;transition:opacity .2s;display:inline-block}
+.group-entity-link:hover{opacity:1}
+
+/* ── INSIGHTS ── */
+.insights-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);margin-top:3.5rem}
+.insight-card{background:var(--navy-2);padding:2.25rem;transition:background .2s;cursor:pointer}
+.insight-card:hover{background:var(--navy-3)}
+.insight-cat{font-size:10px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:.9rem}
+.insight-card h4{font-family:var(--serif);font-size:19px;font-weight:600;color:var(--white);line-height:1.3;margin-bottom:.6rem}
+.insight-card p{font-size:13px;color:var(--muted-2);line-height:1.65;font-weight:300;margin-bottom:1.25rem}
+.insight-link{font-size:12px;font-weight:500;color:var(--gold);letter-spacing:0.04em}
+
+/* ── CTA SECTION ── */
+.cta-section{background:var(--navy-2);border-top:1px solid var(--border)}
+.cta-inner{display:grid;grid-template-columns:1fr auto;gap:5rem;align-items:center}
+.cta-inner h2{margin-bottom:.9rem}
+.cta-inner p{font-size:15px;color:var(--muted-2);line-height:1.78;font-weight:300;max-width:540px}
+.cta-aside{display:flex;flex-direction:column;gap:.75rem;align-items:flex-start;flex-shrink:0}
+.cta-email{font-size:12px;color:var(--muted);text-align:center;width:100%;display:block;text-decoration:none;letter-spacing:.03em;transition:color .2s}
+.cta-email:hover{color:var(--white)}
+
+/* ── FOOTER ── */
+footer{background:var(--navy-2);border-top:1px solid var(--border);padding:4rem 0 2rem}
+.footer-inner{max-width:1180px;margin:0 auto;padding:0 2.5rem}
+.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:4rem;margin-bottom:3rem}
+.fb p{font-size:12px;color:var(--muted);margin-top:.85rem;line-height:1.7;max-width:240px;font-weight:300}
+.fc h5{font-size:10px;font-weight:500;color:var(--white);letter-spacing:0.14em;text-transform:uppercase;margin-bottom:1.25rem}
+.fc a{display:block;font-size:12px;color:var(--muted);text-decoration:none;cursor:pointer;padding:.3rem 0;transition:color .2s}
+.fc a:hover{color:var(--white)}
+.footer-bottom{border-top:1px solid var(--border);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:.75rem}
+.footer-bottom p{font-size:11px;color:var(--muted)}
+.footer-group{text-align:right}
+.footer-group-lbl{font-size:10px;color:var(--muted);letter-spacing:.14em;text-transform:uppercase;margin-bottom:.5rem}
+.footer-group-entities{display:flex;gap:2rem;justify-content:flex-end}
+.fge{text-align:right}
+.fge-name{font-size:12px;color:var(--muted-2)}
+.fge-name em{color:var(--gold);font-style:normal;opacity:.7}
+.fge-link{font-size:10px;color:var(--muted);text-decoration:none;letter-spacing:.04em;transition:color .2s;display:block;margin-top:2px}
+.fge-link:hover{color:var(--gold)}
+
+/* ── SERVICE MODALS ── */
+.modal-overlay{display:none;position:fixed;inset:0;z-index:200;background:rgba(7,9,15,.92);overflow-y:auto;backdrop-filter:blur(5px)}
+.modal-overlay.active{display:block;animation:fade-ov .22s ease}
+@keyframes fade-ov{from{opacity:0}to{opacity:1}}
+.modal-box{background:var(--navy-2);max-width:860px;margin:44px auto;border:1px solid var(--border);animation:slide-up .28s ease}
+@keyframes slide-up{from{transform:translateY(14px);opacity:.7}to{transform:none;opacity:1}}
+.modal-hero{background:var(--navy-3);padding:3.5rem 3rem;position:relative;border-bottom:1px solid var(--border)}
+.modal-close{position:absolute;top:1.25rem;right:1.25rem;background:rgba(255,255,255,0.06);border:1px solid var(--border-2);cursor:pointer;width:34px;height:34px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:14px;border-radius:2px;transition:background .2s,color .2s}
+.modal-close:hover{background:rgba(255,255,255,.12);color:var(--white)}
+.modal-tag{font-size:10px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1.25rem}
+.modal-hero h3{font-family:var(--serif);font-size:38px;font-weight:600;color:var(--white);margin-bottom:.9rem;line-height:1.1}
+.modal-hero p{font-size:15px;color:var(--muted-2);line-height:1.75;font-weight:300;max-width:600px}
+.modal-body{padding:2.5rem 3rem}
+.modal-body>p{font-size:14px;color:var(--muted-2);line-height:1.82;font-weight:300;margin-bottom:1.25rem}
+.modal-body h5{font-family:var(--serif);font-size:20px;font-weight:600;color:var(--white);margin:2.5rem 0 1.25rem}
+.scope-table{width:100%;border-collapse:collapse;margin-bottom:6px}
+.scope-table tr{border-bottom:1px solid var(--border)}
+.scope-table td{padding:1.1rem 0;font-size:13px;vertical-align:top;line-height:1.65;font-weight:300}
+.scope-table td:first-child{font-weight:500;color:var(--white);width:190px;padding-right:1.5rem;font-size:13px}
+.scope-table td:last-child{color:var(--muted-2)}
+.modes-mini{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);margin-bottom:2rem}
+.mode-mini{background:var(--navy-3);padding:1.75rem 1.5rem}
+.mode-mini-tag{font-size:10px;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:.75rem}
+.mode-mini h6{font-size:14px;font-weight:600;color:var(--white);margin-bottom:.6rem}
+.mode-mini p{font-size:13px;color:var(--muted-2);line-height:1.65;font-weight:300;margin-bottom:1rem}
+.mode-mini-price{font-family:var(--mono);font-size:11px;color:var(--gold-dim);letter-spacing:.04em}
+.modal-cta{background:var(--navy);border:1px solid var(--border-2);border-left:2px solid var(--gold);padding:1.75rem 2rem}
+.modal-cta p{font-size:14px;color:var(--muted-2);margin-bottom:1.25rem;line-height:1.65;font-weight:300}
+.modal-cta p strong{color:var(--white);font-weight:500}
+
+/* ── RESPONSIVE ── */
+@media(max-width:960px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-right{display:none}
+  .services-intro,.about-grid,.ind-layout,.process-grid{grid-template-columns:1fr;gap:2.5rem}
+  .sits-grid,.problem-grid{grid-template-columns:1fr 1fr}
+  .stats-inner{grid-template-columns:1fr 1fr 1fr;gap:1.25rem}
+  .stat-item{border-right:none;padding:0}
+  .footer-top{grid-template-columns:1fr 1fr;gap:2.5rem}
+  .cta-inner{grid-template-columns:1fr;gap:2rem}
+  .modes-grid,.work-grid,.firm-grid{grid-template-columns:1fr}
+  .group-block{grid-template-columns:1fr}
+  .group-lbl,.group-entity{border-right:none;border-bottom:1px solid var(--border)}
+  .nav-links{display:none}
+  .hamburger{display:flex}
+  .sticky-card{position:static}
+  .hero-orb{display:none}
+  .svc-grid,.svc-grid-2{grid-template-columns:1fr}
+  .insights-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:640px){
+  .wrap{padding:0 1.5rem}
+  .nav-inner,.footer-inner{padding:0 1.5rem}
+  section{padding:4rem 0}
+  .hero{padding:5rem 0 4rem}
+  .sits-grid,.problem-grid,.ind-grid,.creds-grid{grid-template-columns:1fr}
+  .stats-inner{padding:0 1.5rem;grid-template-columns:1fr 1fr}
+  .footer-top{grid-template-columns:1fr}
+  .modes-mini{grid-template-columns:1fr}
+  .pillar-strip{grid-template-columns:1fr}
+  .insights-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="logo">LEVERAGE&nbsp;<em>STRATEGIC</em>
+      <span class="logo-pipe"></span>
+      <span class="logo-sub">Strategic Finance & Transaction Advisory</span>
+    </a>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#industries">Industries</a>
+      <a href="#work">Work</a>
+      <a href="#about">The Firm</a>
+      <a href="#insights">Insights</a>
+    </div>
+    <a href="https://calendly.com/hello-leverageadvisory/scoping" target="_blank" rel="noopener" class="nav-cta">Book a Call</a>
+    <div class="hamburger" onclick="toggleMobile()"><span></span><span></span><span></span></div>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#services" onclick="toggleMobile()">Services</a>
+    <a href="#industries" onclick="toggleMobile()">Industries</a>
+    <a href="#work" onclick="toggleMobile()">Work</a>
+    <a href="#about" onclick="toggleMobile()">The Firm</a>
+    <a href="#insights" onclick="toggleMobile()">Insights</a>
+    <a href="https://calendly.com/hello-leverageadvisory/scoping" target="_blank" rel="noopener" class="mob-cta">Book a Scoping Call</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-orb"><div class="hero-orb-inner"></div></div>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="hero-tag">Partner-Led · Canada · United States · United Kingdom</div>
+        <h1>When the stakes are<br/>too high for<br/><em>guesswork.</em></h1>
+        <p class="hero-sub">Leverage Strategic is a partner-led advisory firm for founders at high-stakes moments — a fundraise, an acquisition, a CFO gap. Senior-led. Senior-reviewed. Built to hold up under scrutiny.</p>
+        <div class="hero-actions">
+          <a href="https://calendly.com/hello-leverageadvisory/scoping" target="_blank" rel="noopener" class="btn-gold">Book a Scoping Call</a>
+          <a href="#modes" class="btn-outline">How it works</a>
+        </div>
+        <div class="hero-pillars">
+          <div class="pillar">Partner-led delivery</div>
+          <div class="pillar">Institutional rigour</div>
+          <div class="pillar">Founder-side experience</div>
+          <div class="pillar">Both sides of the table</div>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-scale-card">
+          <div class="hsc-lbl">Built for Scale</div>
+          <div class="hsc-models">
+            <div class="hsc-model">
+              <div class="hsc-model-name">Partner Direct</div>
+              <div class="hsc-model-desc">Full senior involvement throughout</div>
+            </div>
+            <div class="hsc-model">
+              <div class="hsc-model-name">Partner-Led,<br/>Team Executed</div>
+              <div class="hsc-model-desc">Senior-overseen specialist delivery</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-cred-card">
+          <div class="hcc-lbl">Firm Credentials</div>
+          <div class="hcc-item">
+            <div class="hcc-dot"></div>
+            <div class="hcc-text"><strong>PwC &amp; EY transaction advisory background</strong> — across fintech, insurtech, eCommerce and consumer sectors in Canada and cross-border</div>
+          </div>
+          <div class="hcc-item">
+            <div class="hcc-dot"></div>
+            <div class="hcc-text"><strong>Founder-side experience</strong> — supported a late-stage venture-backed company through a major institutional fundraise. Both sides of the table.</div>
+          </div>
+          <div class="hcc-item">
+            <div class="hcc-dot"></div>
+            <div class="hcc-text"><strong>Backed by Leverage Remote</strong> — cross-border talent infrastructure for rapid specialist deployment</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="trust-strip">
+  <div class="trust-strip-inner">
+    <div class="ts-label">Firm Background</div>
+    <div class="ts-logos">
+      <div class="ts-logo">CA&nbsp;·&nbsp;ICAI</div>
+      <div class="ts-logo">Global MBA</div>
+      <div class="ts-logo">ex-<span>PwC</span></div>
+      <div class="ts-logo">ex-<span>EY</span></div>
+      <div class="ts-logo">ex-<span>Mazars</span></div>
+      <div class="ts-logo">Series D&nbsp;<span>Founder's Office</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- GEO STRIP -->
+<div class="geo-strip">
+  <div class="geo-inner">
+    <div class="geo-label">Markets Served</div>
+    <div class="geo-markets">
+      <div class="geo-market">
+        <div class="geo-market-name">Canada</div>
+        <div class="geo-market-note">Primary market · Toronto-based</div>
+      </div>
+      <div class="geo-market">
+        <div class="geo-market-name">United States</div>
+        <div class="geo-market-note">Cross-border engagements</div>
+      </div>
+      <div class="geo-market">
+        <div class="geo-market-name">United Kingdom</div>
+        <div class="geo-market-note">European entry point</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WHAT CLIENTS ENGAGE US FOR STRIP -->
+<div class="stats-bar">
+  <div class="trust-strip-inner" style="gap:0;flex-direction:column;padding:1.75rem 2.5rem">
+    <div class="ts-label" style="border-right:none;margin-right:0;margin-bottom:1rem;padding-right:0">What clients engage us for</div>
+    <div class="ts-logos" style="gap:2rem;flex-wrap:wrap">
+      <div class="ts-logo" style="opacity:.8;font-size:12px;font-weight:500;color:var(--off-white)">Fractional CFO Leadership</div>
+      <div style="width:1px;height:14px;background:var(--border-2);self-align:center"></div>
+      <div class="ts-logo" style="opacity:.8;font-size:12px;font-weight:500;color:var(--off-white)">Fundraising &amp; Investor Readiness</div>
+      <div style="width:1px;height:14px;background:var(--border-2)"></div>
+      <div class="ts-logo" style="opacity:.8;font-size:12px;font-weight:500;color:var(--off-white)">Financial Due Diligence</div>
+      <div style="width:1px;height:14px;background:var(--border-2)"></div>
+      <div class="ts-logo" style="opacity:.8;font-size:12px;font-weight:500;color:var(--off-white)">Transaction Advisory</div>
+      <div style="width:1px;height:14px;background:var(--border-2)"></div>
+      <div class="ts-logo" style="opacity:.8;font-size:12px;font-weight:500;color:var(--off-white)">Financial Modelling &amp; FP&amp;A</div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- WHEN FOUNDERS CALL -->
+<section>
+  <div class="wrap">
+    <div class="sec-label fade-up">When Founders Call</div>
+    <h2 class="fade-up">The moments where<br/>the stakes are real.</h2>
+    <div class="rule fade-up"></div>
+    <div class="sits-grid">
+      <div class="sit tilt-card fade-up">
+        <div class="sit-n">01</div>
+        <h4>Your CFO just left — or never existed.</h4>
+        <p>Senior finance leadership deployed before the gap costs you a fundraise or a board relationship.</p>
+        <div class="sit-arrow">→ Fractional CFO</div>
+      </div>
+      <div class="sit tilt-card fade-up">
+        <div class="sit-n">02</div>
+        <h4>You're raising a Series A, B, or C.</h4>
+        <p>Numbers that hold up, a model that ties, and a data room that answers questions before they're asked.</p>
+        <div class="sit-arrow">→ Fundraising &amp; Investor Readiness</div>
+      </div>
+      <div class="sit tilt-card fade-up">
+        <div class="sit-n">03</div>
+        <h4>An acquisition or sale is on the table.</h4>
+        <p>Transaction-level rigour on both sides — buy-side diligence, sell-side positioning, deal structure review.</p>
+        <div class="sit-arrow">→ FDD + Transaction Advisory</div>
+      </div>
+      <div class="sit tilt-card fade-up">
+        <div class="sit-n">04</div>
+        <h4>The board is asking questions you can't answer fast enough.</h4>
+        <p>KPI frameworks, board packs, and rolling forecasts built around the metrics that matter.</p>
+        <div class="sit-arrow">→ Fractional CFO + FP&amp;A</div>
+      </div>
+      <div class="sit tilt-card fade-up">
+        <div class="sit-n">05</div>
+        <h4>The financial model doesn't match the business.</h4>
+        <p>Rebuilt driver-based, investor-grade, and actually usable by the team maintaining it.</p>
+        <div class="sit-arrow">→ Financial Modelling</div>
+      </div>
+      <div class="sit tilt-card fade-up">
+        <div class="sit-n">06</div>
+        <h4>You need institutional rigour without institutional overhead.</h4>
+        <p>Senior judgment on every deliverable — without rotating analysts, inflated fees, or the partner who disappears after signing.</p>
+        <div class="sit-arrow">→ Any service line</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- DELIVERY MODES -->
+<section class="dark-section" id="modes">
+  <div class="wrap">
+    <div class="sec-label fade-up">How the Firm Delivers</div>
+    <h2 class="fade-up">Built for scale.<br/>Structured for quality.</h2>
+    <div class="rule fade-up"></div>
+    <p class="fade-up" style="font-size:15px;color:var(--muted-2);line-height:1.8;max-width:600px;font-weight:300;margin-bottom:0">Every engagement follows one of two models — selected at scoping based on complexity, timeline, and how much direct senior access the situation requires.</p>
+    <div class="modes-grid fade-up">
+      <div class="mode-card tilt-card">
+        <div class="mode-tag">Model 1 — Partner Direct</div>
+        <h4>Full senior involvement throughout</h4>
+        <p>The managing partner leads every client conversation, builds or reviews every deliverable, and is available throughout. For the highest-stakes situations where seniority is required at every step.</p>
+        <ul class="mode-list">
+          <li>Managing partner-led from scoping to delivery</li>
+          <li>Direct access — no account managers</li>
+          <li>Board and investor meeting attendance</li>
+          <li>All deliverables personally built or reviewed</li>
+        </ul>
+      </div>
+      <div class="mode-card tilt-card">
+        <div class="mode-tag">Model 2 — Partner-Led, Team Executed</div>
+        <h4>Senior-overseen specialist delivery</h4>
+        <p>A specialist team handles execution under direct managing partner oversight. The partner leads all client sessions, signs off every deliverable. Same quality, faster delivery, more efficient cost.</p>
+        <ul class="mode-list">
+          <li>Specialist analyst or finance lead on execution</li>
+          <li>Managing partner leads strategy and client sessions</li>
+          <li>Partner sign-off on every deliverable</li>
+          <li>Backed by <a href="https://leverageremote.com" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold-border);transition:border-color .2s">Leverage Remote</a> talent infrastructure</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mode-note fade-up">
+      <p>This is what <span>"partner-led, team-executed"</span> means in practice — a firm that scales beyond one person's availability, without ever sacrificing the senior judgment clients engaged for. Enabled by the <a href="https://leverageremote.com" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold-border)">Leverage Remote</a> talent infrastructure.</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="services-intro fade-up">
+      <div>
+        <div class="sec-label">Service Lines</div>
+        <h2>Core advisory.<br/>Strategic support.</h2>
+        <div class="rule"></div>
+      </div>
+      <div style="padding-top:1rem">
+        <p style="font-size:15px;color:var(--muted-2);line-height:1.8;font-weight:300">Five focused services. No bloat. A fundraising engagement often begins with the CFO relationship. A diligence mandate often extends into transaction advisory. Each practice is purpose-built — and designed to work together.</p>
+      </div>
+    </div>
+    <!-- Core Advisory Label -->
+    <div class="fade-up" style="margin-bottom:1px">
+      <div style="padding:.75rem 2rem;background:var(--navy-3);border:1px solid var(--border);border-bottom:none;display:inline-flex;align-items:center;gap:.75rem">
+        <span style="font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)">Core Advisory</span>
+        <span style="font-size:10px;color:var(--muted);font-weight:300">Highest-value engagements — where the stakes are real</span>
+      </div>
+    </div>
+    <div class="svc-grid fade-up">
+      <div class="svc-card tilt-card" onclick="openModal('cfo')">
+        <div class="svc-tier">Core Advisory · CFO &amp; Finance</div>
+        <h4>Fractional CFO</h4>
+        <p>Senior finance leadership without the full-time cost. Board reporting, investor relations, cash flow governance, and FP&amp;A for $2M–$20M revenue businesses.</p>
+        <span class="svc-link">Explore service →</span>
+      </div>
+      <div class="svc-card tilt-card" onclick="openModal('fdd')" style="border-left:2px solid var(--gold)">
+        <div class="svc-tier">Core Advisory · Capital &amp; Transactions</div>
+        <h4>Financial Due Diligence</h4>
+        <p>Buy-side and sell-side Quality of Earnings for $5M–$100M transactions. Institutional rigour without institutional overhead — delivered by the senior person you spoke to.</p>
+        <span class="svc-link">Explore service →</span>
+      </div>
+      <div class="svc-card tilt-card" onclick="openModal('fundraising')">
+        <div class="svc-tier">Core Advisory · Capital &amp; Transactions</div>
+        <h4>Fundraising &amp; Investor Readiness</h4>
+        <p>The financial model, investor narrative, and data room — built by a team that has been on both sides of the table. For Series A through Series C founders going to market.</p>
+        <span class="svc-link">Explore service →</span>
+      </div>
+    </div>
+    <!-- Strategic Support Label -->
+    <div class="fade-up" style="margin-top:2rem;margin-bottom:1px">
+      <div style="padding:.75rem 2rem;background:var(--navy-3);border:1px solid var(--border);border-bottom:none;display:inline-flex;align-items:center;gap:.75rem">
+        <span style="font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--muted-2)">Strategic Support</span>
+        <span style="font-size:10px;color:var(--muted);font-weight:300">Execution infrastructure for the advisory above</span>
+      </div>
+    </div>
+    <div class="svc-grid-2 fade-up">
+      <div class="svc-card tilt-card" onclick="openModal('ma')">
+        <div class="svc-tier">Strategic Support · Transactions</div>
+        <h4>Transaction Advisory</h4>
+        <p>Financial, commercial, and structural support for buy-side and sell-side. LOI review, deal structuring, diligence management, and negotiation support — for founders who've never done this before, advised by someone who has done it many times.</p>
+        <span class="svc-link">Explore service →</span>
+      </div>
+      <div class="svc-card tilt-card" onclick="openModal('modelling')">
+        <div class="svc-tier">Strategic Support · Finance</div>
+        <h4>Financial Modelling &amp; FP&amp;A</h4>
+        <p>Investor-grade 3-statement models, unit economics, and scenario analysis. The tool that makes every other engagement more precise — built to be used, not archived.</p>
+        <span class="svc-link">Explore service →</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- INDUSTRIES -->
+<section class="dark-section" id="industries">
+  <div class="wrap">
+    <div class="sec-label fade-up">Experience Across</div>
+    <h2 class="fade-up">Sectors we know<br/>from the inside.</h2>
+    <div class="rule fade-up"></div>
+    <div class="ind-layout">
+      <div class="ind-grid fade-up">
+        <div class="ind-cell tilt-card">
+          <div class="ind-name">SaaS</div>
+          <div class="ind-note">ARR analysis, cohort modelling, churn-adjusted valuations</div>
+        </div>
+        <div class="ind-cell tilt-card">
+          <div class="ind-name">Fintech</div>
+          <div class="ind-note">Revenue model complexity, regulatory capital, unit economics</div>
+        </div>
+        <div class="ind-cell tilt-card">
+          <div class="ind-name">Insurtech</div>
+          <div class="ind-note">Loss ratio dynamics, embedded insurance, growth fundraises</div>
+        </div>
+        <div class="ind-cell tilt-card">
+          <div class="ind-name">E-commerce</div>
+          <div class="ind-note">Channel concentration, working capital, marketplace dynamics</div>
+        </div>
+        <div class="ind-cell tilt-card">
+          <div class="ind-name">Consumer Brands</div>
+          <div class="ind-note">CPG unit economics, DTC vs wholesale mix, brand value</div>
+        </div>
+        <div class="ind-cell tilt-card">
+          <div class="ind-name">Marketplaces</div>
+          <div class="ind-note">Take-rate analysis, liquidity dynamics, two-sided growth</div>
+        </div>
+      </div>
+      <div class="fade-up">
+        <p style="font-size:15px;color:var(--muted-2);line-height:1.82;font-weight:300;margin-bottom:2rem">Industry knowledge is not a nice-to-have in transaction advisory — it is the difference between a QoE that misses the structural risk and one that finds it.</p>
+        <ul class="exp-list">
+          <li>
+            <span class="exp-co">Transaction</span>
+            <span class="exp-text"><strong>Transaction Advisory &amp; FDD</strong> across fintech, CPG, and eCommerce in Canada, India, and cross-border</span>
+          </li>
+          <li>
+            <span class="exp-co">Insurtech</span>
+            <span class="exp-text"><strong>Series D Founder's Office</strong> — led a major fundraise end-to-end. The firm understands what it means to be on the founder's side of the table.</span>
+          </li>
+          <li>
+            <span class="exp-co">Mid-Market</span>
+            <span class="exp-text"><strong>$10M–$100M M&amp;A</strong> QoE, revenue analysis, and working capital review for PE and strategic acquirers</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- WORK -->
+<section id="work">
+  <div class="wrap">
+    <div class="sec-label fade-up">Selected Work</div>
+    <h2 class="fade-up">What this looks like<br/>in practice.</h2>
+    <div class="rule fade-up"></div>
+    <p class="fade-up" style="font-size:15px;color:var(--muted-2);font-weight:300;max-width:560px">Representative engagements. Details anonymised — situations, complications, and outcomes are real.</p>
+    <div class="work-grid">
+      <div class="work-card tilt-card fade-up">
+        <div class="work-tag">Fractional CFO</div>
+        <div class="work-co">Series A SaaS · $9M Revenue · Pre-Raise</div>
+        <h4>Finance function rebuilt four months before a fundraise.</h4>
+        <div class="work-label">Situation</div>
+        <div class="work-text">Finance manager had just left. Board packs built the night before meetings. Fundraise four months away. Investors asking questions that took a week to answer.</div>
+        <div class="work-label">Complication</div>
+        <div class="work-text">Rebuilding the model revealed two revenue streams reported gross when they should be net — ARR overstated by ~$1.1M. Needed correction before investor conversations began.</div>
+        <div class="work-result"><p>KPI framework, rolling forecast, and board cadence built from scratch. ARR restated. Round closed on time — no surprises in diligence.</p></div>
+      </div>
+      <div class="work-card tilt-card fade-up">
+        <div class="work-tag">Fundraising Readiness</div>
+        <div class="work-co">Pre-Series A B2B SaaS · $4M ARR</div>
+        <h4>A strong product with a model that didn't tell the story.</h4>
+        <div class="work-label">Situation</div>
+        <div class="work-text">Strong product, growing customers — but hardcoded assumptions, no cohort analysis, and a narrative that didn't match the numbers. Two investors had requested a revised model.</div>
+        <div class="work-label">What we found</div>
+        <div class="work-text">CAC wasn't fully allocated. Payback period extended from 11 to 17 months when corrected — still fundable, but a very different investor conversation.</div>
+        <div class="work-result"><p>3-statement model rebuilt driver-based. Series A closed 11 weeks after materials were finalised.</p></div>
+      </div>
+      <div class="work-card tilt-card fade-up">
+        <div class="work-tag">Financial Due Diligence</div>
+        <div class="work-co">Family Office · $14M Revenue · eCommerce Acquisition</div>
+        <h4>Revenue that looked clean until it was stress-tested.</h4>
+        <div class="work-label">Situation</div>
+        <div class="work-text">Family office evaluating a platform acquisition. Financials appeared clean — revenue composition had never been broken down by channel, customer, or cohort.</div>
+        <div class="work-label">What the diligence found</div>
+        <div class="work-text">41% revenue in one wholesale customer on a contract expiring in 8 months. Working capital peg discrepancy adjusted the price by $380k. Neither visible in summary financials.</div>
+        <div class="work-result"><p>Full buy-side FDD delivered. Deal closed at revised terms — concentration risk renegotiated into earn-out structure.</p></div>
+      </div>
+      <div class="work-card tilt-card fade-up">
+        <div class="work-tag">Financial Modelling</div>
+        <div class="work-co">Series B Healthtech · $22M ARR</div>
+        <h4>A board model that couldn't be updated without breaking.</h4>
+        <div class="work-label">Situation</div>
+        <div class="work-text">Board requested a new model for a strategic planning offsite. Existing model: hardcoded throughout, no scenario functionality, broke on updates.</div>
+        <div class="work-label">Additional scope</div>
+        <div class="work-text">Model was being used for clinical hiring forecasts — errors flowing through to headcount decisions. Scope extended to include workforce planning.</div>
+        <div class="work-result"><p>Integrated 3-statement model with scenario outputs and workforce planning. Team trained to maintain it independently.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- PROCESS -->
+<section class="dark-section" id="process">
+  <div class="wrap">
+    <div class="sec-label fade-up">Engagement Process</div>
+    <h2 class="fade-up">No surprises.<br/>No rotating teams.</h2>
+    <div class="rule fade-up"></div>
+    <div class="process-grid">
+      <div class="steps">
+        <div class="step fade-up">
+          <div class="step-n">01</div>
+          <div>
+            <h4>Scoping Call — 30 minutes</h4>
+            <p>A direct conversation with the managing partner. You describe the situation. Honest assessment of fit, delivery mode, and scope. No pitch. No deck.</p>
+          </div>
+        </div>
+        <div class="step fade-up">
+          <div class="step-n">02</div>
+          <div>
+            <h4>Proposal within 48 hours</h4>
+            <p>Scope, deliverables, timeline, delivery mode, and fixed pricing — in writing. No ambiguity about what you're getting or what it costs.</p>
+          </div>
+        </div>
+        <div class="step fade-up">
+          <div class="step-n">03</div>
+          <div>
+            <h4>Kick-Off &amp; Alignment</h4>
+            <p>Priorities, data requirements, key contacts, and communication cadence. The engagement begins with full clarity — not mid-flight corrections.</p>
+          </div>
+        </div>
+        <div class="step fade-up">
+          <div class="step-n">04</div>
+          <div>
+            <h4>Delivery — no handoffs</h4>
+            <p>Weekly updates. Managing partner available throughout. No handoffs, no account managers. If something changes, it's addressed directly.</p>
+          </div>
+        </div>
+        <div class="step fade-up">
+          <div class="step-n">05</div>
+          <div>
+            <h4>Deliverable &amp; Decision Support</h4>
+            <p>Every output walked through directly — not emailed and closed. If the situation evolves, the conversation continues.</p>
+          </div>
+        </div>
+      </div>
+      <div class="sticky-card fade-up">
+        <div class="sc-label">At a Glance</div>
+        <div class="sc-row"><span class="sc-key">Scoping call</span><span class="sc-val green">Free · 30 mins</span></div>
+        <div class="sc-row"><span class="sc-key">Proposal turnaround</span><span class="sc-val">48 hours</span></div>
+        <div class="sc-row"><span class="sc-key">Pricing model</span><span class="sc-val">Fixed scope</span></div>
+        <div class="sc-row"><span class="sc-key">Senior involvement</span><span class="sc-val gold">Every engagement</span></div>
+        <div class="sc-row"><span class="sc-key">Account managers</span><span class="sc-val" style="color:#E05252">None</span></div>
+        <div class="sc-row"><span class="sc-key">Your access</span><span class="sc-val gold">Direct to partner</span></div>
+        <div class="sc-row"><span class="sc-key">Engagements taken</span><span class="sc-val gold">Selective</span></div>
+        <div class="sc-cta">
+          <a href="https://calendly.com/hello-leverageadvisory/scoping" target="_blank" rel="noopener" class="btn-gold" style="display:block;text-align:center;padding:14px">Book a Scoping Call</a>
+        </div>
+      </div>
+    </div>
+    <div class="mode-note fade-up" style="margin-top:2.5rem">
+      <p><span>Engagements are selective.</span> Leverage Strategic takes on a limited number of active mandates at any time. If the fit isn't right, we'll say so on the scoping call. That directness is part of the value.</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ABOUT / THE FIRM -->
+<section id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="fade-up">
+        <div class="sec-label">The Firm</div>
+        <h2 style="margin-bottom:1.25rem">Built to be a firm.<br/>Partner-led today.<br/>Institutional tomorrow.</h2>
+        <div class="rule"></div>
+        <p style="font-size:15px;color:var(--muted-2);line-height:1.82;font-weight:300;margin-bottom:1.25rem">Leverage Strategic was founded with a specific intent: to build a modern boutique advisory firm where clients initially engage because of the founding partner's background — and over time engage because of the firm's capability.</p>
+        <p style="font-size:15px;color:var(--muted-2);line-height:1.82;font-weight:300;margin-bottom:1.25rem">The managing partner spent a decade in transaction advisory and financial due diligence at PwC, EY, and Mazars — across fintech, insurtech, eCommerce, CPG, and technology, in Canada and cross-border.</p>
+        <p style="font-size:15px;color:var(--muted-2);line-height:1.82;font-weight:300;margin-bottom:1.75rem">He then moved to the founder side — spending time inside a growth-stage insurtech, leading fundraising and capital strategy end-to-end. That experience gives the firm something most boutique advisors don't have: <strong style="color:var(--off-white);font-weight:500">a genuine understanding of what it is like to be on the founder's side of the table.</strong></p>
+        <div class="creds-grid">
+          <div class="cred-cell"><div class="cred-name">CA — ICAI</div><div class="cred-inst">Institute of Chartered Accountants of India</div></div>
+          <div class="cred-cell"><div class="cred-name">Global MBA</div><div class="cred-inst">University of Western Australia</div></div>
+          <div class="cred-cell"><div class="cred-name">Advanced Strategy</div><div class="cred-inst">Wharton School, UPenn</div></div>
+          <div class="cred-cell"><div class="cred-name">Executive Management</div><div class="cred-inst">IIM Kozhikode, India</div></div>
+        </div>
+      </div>
+      <div class="fade-up">
+        <div class="sec-label" style="margin-bottom:1.25rem">Background</div>
+        <table class="bg-table">
+          <tr>
+            <td>PwC</td>
+            <td><strong>Transaction Advisory &amp; FDD</strong><span>Toronto &amp; Kolkata. Buy-side and sell-side diligence across fintech, CPG, eCommerce.</span></td>
+          </tr>
+          <tr>
+            <td>EY</td>
+            <td><strong>Transaction Services</strong><span>Gurgaon. Cross-border M&amp;A, revenue analysis, deal structuring.</span></td>
+          </tr>
+          <tr>
+            <td>Mazars</td>
+            <td><strong>Transaction Services</strong><span>Mid-market M&amp;A, $10M–$100M. PE and strategic acquirer diligence.</span></td>
+          </tr>
+          <tr>
+            <td>RenewBuy</td>
+            <td><strong>Founder's Office — Series D</strong><span>Led a major institutional fundraise end-to-end. Growth strategy, capital allocation, 12-person team.</span></td>
+          </tr>
+          <tr>
+            <td>Lvrg Remote</td>
+            <td><strong>Founder &amp; Operating Lead</strong><span>Cross-border talent and operations firm. Built from zero.</span></td>
+          </tr>
+          <tr>
+            <td>Lvrg Strategic</td>
+            <td><strong>Founder &amp; Managing Partner</strong><span>Partner-led strategic finance and transaction advisory.</span></td>
+          </tr>
+        </table>
+        <div class="mode-note" style="margin-top:0">
+          <p style="font-size:14px;color:var(--muted-2);font-weight:300;line-height:1.7"><span style="color:var(--gold);font-family:inherit;font-size:inherit;font-style:normal">"I've been in the diligence room at PwC and the fundraising meeting at a Series D.</span> That combination is what this firm is built on."</p>
+          <p style="font-size:12px;color:var(--muted);margin-top:.75rem;font-weight:300">Prashant Gupta — Founder &amp; Managing Partner</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- FIRM VISION -->
+<section class="dark-section">
+  <div class="wrap">
+    <div class="sec-label fade-up">The Long View</div>
+    <h2 class="fade-up">Where Leverage Strategic<br/>is being built to go.</h2>
+    <div class="rule fade-up"></div>
+    <div class="firm-grid fade-up">
+      <div class="firm-card tilt-card">
+        <div class="firm-year">TODAY — YEARS 0–2</div>
+        <h4>Partner-led boutique</h4>
+        <p>The managing partner leads every engagement directly. Establishing track record, case studies, and referral network across Canada, US, and UK.</p>
+      </div>
+      <div class="firm-card tilt-card">
+        <div class="firm-year">YEARS 2–5</div>
+        <h4>Built delivery teams</h4>
+        <p>Analysts, FP&amp;A specialists, diligence associates, and finance managers underneath. The partner becomes the relationship lead, reviewer, and rainmaker.</p>
+      </div>
+      <div class="firm-card tilt-card">
+        <div class="firm-year">YEARS 5+</div>
+        <h4>Modern boutique advisory firm</h4>
+        <p>Three defined practice lines in the model of A&amp;M, Riveron, or CFGI. Clients buy the firm's capability — not a single person's availability.</p>
+      </div>
+    </div>
+    <div class="vision-quote fade-up">
+      <div class="vq-inner">
+        <div class="sec-label" style="justify-content:center">Leverage Group</div>
+        <blockquote>"Leverage Remote brings the execution infrastructure. Leverage Strategic brings the expertise. <em>A client can enter through either door.</em>"</blockquote>
+        <div class="vq-attr">Prashant Gupta — Founder, Leverage Group</div>
+      </div>
+    </div>
+    <div class="group-block fade-up">
+      <div class="group-lbl"><div class="group-lbl-text">Part of the<br/>Leverage Group</div></div>
+      <div class="group-entity">
+        <div class="group-entity-name">Leverage Strategic</div>
+        <div class="group-entity-desc">Partner-Led Strategic Finance &amp; Transaction Advisory — CFO, Capital Markets, M&amp;A across Canada, US, UK.</div>
+        <a href="#" class="group-entity-link">leveragestrategic.com</a>
+      </div>
+      <div class="group-entity">
+        <div class="group-entity-name">Leverage Remote</div>
+        <div class="group-entity-desc">Cross-Border Talent &amp; Execution Infrastructure — remote finance specialists deployed into growth-stage businesses.</div>
+        <a href="https://leverageremote.com" target="_blank" rel="noopener" class="group-entity-link">leverageremote.com ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- INSIGHTS -->
+<section id="insights">
+  <div class="wrap">
+    <div class="sec-label fade-up">Insights</div>
+    <h2 class="fade-up">Thinking from<br/>the practice.</h2>
+    <div class="rule fade-up"></div>
+    <div class="insights-grid fade-up">
+      <div class="insight-card tilt-card">
+        <div class="insight-cat">Fractional CFO</div>
+        <h4>What a Fractional CFO actually does — vs. a full-time hire</h4>
+        <p>Undersold as a glorified bookkeeper, oversold as a magic fix. What senior fractional CFO capacity actually looks like in a $5M–$15M business.</p>
+        <span class="insight-link">Read →</span>
+      </div>
+      <div class="insight-card tilt-card">
+        <div class="insight-cat">Fundraising</div>
+        <h4>What to prepare before a Series A — the financial checklist</h4>
+        <p>Most founders arrive with a product story and a spreadsheet. The full financial preparation checklist, built from the other side of the table.</p>
+        <span class="insight-link">Read →</span>
+      </div>
+      <div class="insight-card tilt-card">
+        <div class="insight-cat">Transaction Advisory</div>
+        <h4>What a QoE actually covers — and why it matters</h4>
+        <p>Quality of Earnings determines whether a deal closes at asking price or gets repriced in diligence. What a rigorous QoE covers — and what most mid-market reports miss.</p>
+        <span class="insight-link">Read →</span>
+      </div>
+      <div class="insight-card tilt-card">
+        <div class="insight-cat">Transaction Advisory</div>
+        <h4>How to structure a financial data room for investor due diligence</h4>
+        <p>A well-structured data room signals operational maturity before a single document is opened.</p>
+        <span class="insight-link">Read →</span>
+      </div>
+      <div class="insight-card tilt-card">
+        <div class="insight-cat">CFO Advisory</div>
+        <h4>When to go from fractional CFO to a full-time hire</h4>
+        <p>There's a specific inflection point where the fractional arrangement stops making sense — and how to structure the transition without disrupting the business.</p>
+        <span class="insight-link">Read →</span>
+      </div>
+      <div class="insight-card tilt-card">
+        <div class="insight-cat">Strategy</div>
+        <h4>Capital allocation for founder-led businesses — the decisions that compound</h4>
+        <p>Most founders treat capital allocation as a finance question. It is a strategy question. The framework for reinvestment and market-expansion decisions under constraint.</p>
+        <span class="insight-link">Read →</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CTA -->
+<section class="cta-section" id="contact">
+  <div class="wrap">
+    <div class="cta-inner fade-up">
+      <div>
+        <div class="sec-label">Advisory Engagements</div>
+        <h2>If the stakes are high —<br/>let's talk.</h2>
+        <div class="rule"></div>
+        <p>Every engagement starts with a 30-minute scoping call with the managing partner. No pitch. No deck. A direct conversation about whether this is the right fit — and what the right approach looks like.</p>
+      </div>
+      <div class="cta-aside">
+        <a href="https://calendly.com/hello-leverageadvisory/scoping" target="_blank" rel="noopener" class="btn-gold">Book a Scoping Call</a>
+        <a href="mailto:hello@leveragestrategic.com" class="cta-email">hello@leveragestrategic.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="fb">
+        <a href="#" class="logo" style="font-size:17px">LEVERAGE&nbsp;<em>STRATEGIC</em></a>
+        <p>Partner-led strategic finance and transaction advisory for founder-led businesses at high-stakes financial moments.</p>
+        <p style="margin-top:.5rem">Canada &nbsp;·&nbsp; United States &nbsp;·&nbsp; United Kingdom</p>
+      </div>
+      <div class="fc">
+        <h5>Services</h5>
+        <a onclick="openModal('cfo')" style="cursor:pointer">Fractional CFO</a>
+        <a onclick="openModal('fdd')" style="cursor:pointer">Financial Due Diligence</a>
+        <a onclick="openModal('fundraising')" style="cursor:pointer">Fundraising &amp; Investor Readiness</a>
+        <a onclick="openModal('ma')" style="cursor:pointer">Transaction Advisory</a>
+        <a onclick="openModal('modelling')" style="cursor:pointer">Financial Modelling &amp; FP&amp;A</a>
+      </div>
+      <div class="fc">
+        <h5>Firm</h5>
+        <a href="#modes">Delivery Models</a>
+        <a href="#process">How It Works</a>
+        <a href="#about">About the Firm</a>
+        <a href="#work">Selected Work</a>
+        <a href="#insights">Insights</a>
+      </div>
+      <div class="fc">
+        <h5>Contact</h5>
+        <a href="https://calendly.com/hello-leverageadvisory/scoping" target="_blank" rel="noopener">Book a Scoping Call</a>
+        <a href="mailto:hello@leveragestrategic.com">hello@leveragestrategic.com</a>
+        <a href="https://linkedin.com/in/caprashantg" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Leverage Strategic. All rights reserved.</p>
+      <div class="footer-group">
+        <div class="footer-group-lbl">Part of the Leverage Group</div>
+        <div class="footer-group-entities">
+          <div class="fge">
+            <div class="fge-name">Leverage <em>Strategic</em></div>
+            <a href="#" class="fge-link">leveragestrategic.com</a>
+          </div>
+          <div class="fge">
+            <div class="fge-name">Leverage <em>Remote</em></div>
+            <a href="https://leverageremote.com" target="_blank" rel="noopener" class="fge-link">leverageremote.com ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ════════════════════════════════ MODALS ════ -->
+
+<!-- CFO -->
+<div class="modal-overlay" id="modal-cfo">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('cfo')">✕</button>
+    <div class="modal-hero">
+      <div class="modal-tag">CFO &amp; Finance — Primary Service</div>
+      <h3>Fractional CFO</h3>
+      <p>Senior finance leadership without the full-time cost — the strategic layer that lets you run the business like a CFO is in the room.</p>
+    </div>
+    <div class="modal-body">
+      <p>There is a moment in every growth-stage business when the founder realises the finance function is broken. The numbers aren't reliable. The board is asking questions that take a week to answer. This is the moment a Fractional CFO pays for itself.</p>
+      <p>Leverage Strategic provides senior CFO capacity on a part-time structure built for $2M–$20M revenue businesses — including board &amp; investor reporting as a core deliverable, not an add-on.</p>
+      <h5>What the engagement covers</h5>
+      <table class="scope-table">
+        <tr><td>Board &amp; Investor Reporting</td><td>Board pack preparation, KPI dashboards, and investor update materials. Your investors get what they need — in a format that builds confidence, not questions.</td></tr>
+        <tr><td>Financial Planning &amp; Analysis</td><td>Rolling forecasts, scenario models, and budget-versus-actuals review. The numbers before you need them.</td></tr>
+        <tr><td>Cash Flow Governance</td><td>Cash runway modelling, working capital management, and early warning signals. No surprises on the balance sheet.</td></tr>
+        <tr><td>Fundraise Preparation</td><td>Data room structure, financial model, investor narrative, and diligence readiness built before the process begins.</td></tr>
+        <tr><td>Unit Economics &amp; Margin</td><td>Revenue streams, cost drivers, contribution margins, and pricing decisions.</td></tr>
+        <tr><td>Finance Function Build-Out</td><td>Oversight of existing staff, hiring support, and finance team structure as the business scales.</td></tr>
+      </table>
+      <h5>Delivery models &amp; pricing</h5>
+      <div class="modes-mini">
+        <div class="mode-mini">
+          <div class="mode-mini-tag">Model 1 — Partner Direct</div>
+          <h6>Full senior involvement</h6>
+          <p>The managing partner is your Fractional CFO — embedded 2–3 days per week. Attends board meetings, owns the investor relationship, leads all finance decisions.</p>
+          <div class="mode-mini-price">From $8,000/month · 3-month minimum</div>
+        </div>
+        <div class="mode-mini">
+          <div class="mode-mini-tag">Model 2 — Partner-Led, Team Executed</div>
+          <h6>Senior-overseen execution</h6>
+          <p>A specialist finance lead handles day-to-day FP&amp;A and reporting — with the managing partner leading board sessions and all strategy personally.</p>
+          <div class="mode-mini-price">From $5,000/month · 3-month minimum</div>
+        </div>
+      </div>
+      <div class="modal-cta">
+        <p><strong>CFO just left? Fundraise coming? Board asking hard questions?</strong> Let's scope the right engagement.</p>
+        <a href="https://calendly.com/hello-leverageadvisory/scoping" target="_blank" rel="noopener" class="btn-gold">Book a Scoping Call</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FUNDRAISING -->
+<div class="modal-overlay" id="modal-fundraising">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('fundraising')">✕</button>
+    <div class="modal-hero">
+      <div class="modal-tag">Capital &amp; Transactions — Primary Service</div>
+      <h3>Fundraising &amp; Investor Readiness</h3>
+      <p>The financial model, investor narrative, and data room — built by a team that has been on both sides of the table.</p>
+    </div>
+    <div class="modal-body">
+      <p>Most fundraising processes fail — or close badly — not because the business isn't fundable, but because the financial materials don't hold up. The managing partner has reviewed models from the investor side and built them from the founder side — including leading a major institutional fundraise end-to-end.</p>
+      <h5>What the engagement covers</h5>
+      <table class="scope-table">
+        <tr><td>Financial Model</td><td>Driver-based 3-statement model with scenario outputs and unit economics. Built to withstand diligence.</td></tr>
+        <tr><td>Investor Narrative</td><td>The financial story — growth drivers, unit economics, market expansion logic — translated into a version an investor can interrogate and believe.</td></tr>
+        <tr><td>Data Room</td><td>Full data room structure, document list, and population. Built to answer the first 20 investor questions before they're asked.</td></tr>
+        <tr><td>Investor Q&amp;A Prep</td><td>The hard questions — on CAC, churn, revenue quality, competitive dynamics — prepared in advance with supporting analysis.</td></tr>
+        <tr><td>Metrics Audit</td><td>Review of reported KPIs against investor-standard definitions: ARR, NRR, CAC, LTV, payback period, gross margin.</td></tr>
+      </table>
+      <h5>Delivery models &amp; pricing</h5>
+      <div class="modes-mini">
+        <div class="mode-mini">
+          <div class="mode-mini-tag">Model 1 — Partner Direct</div>
+          <h6>Full senior involvement</h6>
+          <p>Managing partner builds the model, writes the narrative, and structures the data room. Available throughout the live process.</p>
+          <div class="mode-mini-price">From $15,000 per engagement</div>
+        </div>
+        <div class="mode-mini">
+          <div class="mode-mini-tag">Model 2 — Partner-Led, Team Executed</div>
+          <h6>Senior-overseen execution</h6>
+          <p>Specialist analyst builds model and data room under managing partner review. Partner leads all strategy sessions and investor prep.</p>
+          <div class="mode-mini-price">From $10,000 per engagement</div>
+        </div>
+      </div>
+      <div class="modal-cta">
+        <p><strong>Going to market in the next 3–6 months?</strong> The best time to start is before the process begins — not after the first investor asks for a revised model.</p>
+        <a href="https://calendly.com/hello-leverageadvisory/scoping" target="_blank" rel="noopener" class="btn-gold">Book a Scoping Call</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODELLING -->
+<div class="modal-overlay" id="modal-modelling">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('modelling')">✕</button>
+    <div class="modal-hero">
+      <div class="modal-tag">Strategic Advisory — Primary Service</div>
+      <h3>Financial Modelling &amp; FP&amp;A</h3>
+      <p>Investor-grade models built correctly the first time — structured to be used, not archived.</p>
+    </div>
+    <div class="modal-body">
+      <p>Most models in growth-stage businesses fail in one of two ways: hardcoded and brittle, or technically correct but disconnected from the actual business drivers. Leverage Strategic builds models that are driver-based, audit-ready, and designed for the specific decisions the business needs to make.</p>
+      <h5>What the engagement covers</h5>
+      <table class="scope-table">
+        <tr><td>3-Statement Model</td><td>Integrated P&amp;L, balance sheet, and cash flow — driver-based, linked correctly, structured around the actual revenue and cost model.</td></tr>
+        <tr><td>Unit Economics</td><td>CAC, LTV, payback period, contribution margin by product or channel — built from first principles.</td></tr>
+        <tr><td>Scenario Analysis</td><td>Base, downside, and upside scenarios built into the model structure — so board conversations happen around assumptions, not outputs.</td></tr>
+        <tr><td>Board Reporting</td><td>KPI dashboards, variance analysis, and board pack templates built around metrics that actually matter.</td></tr>
+        <tr><td>Training Handover</td><td>A walkthrough session so the team can update the model without breaking it.</td></tr>
+      </table>
+      <h5>Delivery models &amp; pricing</h5>
+      <div class="modes-mini">
+        <div class="mode-mini">
+          <div class="mode-mini-tag">Model 1 — Partner Direct</div>
+          <h6>Full senior involvement</h6>
+          <p>Managing partner builds personally. Two revision rounds, full walkthrough, and 30-day follow-up availability.</p>
+          <div class="mode-mini-price">From $8,000 per engagement</div>
+        </div>
+        <div class="mode-mini">
+          <div class="mode-mini-tag">Model 2 — Partner-Led, Team Executed</div>
+          <h6>Senior-overseen execution</h6>
+          <p>Specialist analyst builds under managing partner review and sign-off. Same quality, faster delivery.</p>
+          <div class="mode-mini-price">From $5,000 per engagement</div>
+        </div>
+      </div>
+      <div class="modal-cta">
+        <p><strong>Need a model that holds up in a board meeting or investor conversation?</strong> Most modelling engagements become the entry point into a longer advisory relationship.</p>
+        <a href="https://calendly.com/hello-leverageadvisory/scoping" target="_blank" rel="noopener" class="btn-gold">Book a Scoping Call</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FDD -->
+<div class="modal-overlay" id="modal-fdd">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('fdd')">✕</button>
+    <div class="modal-hero">
+      <div class="modal-tag">Core Advisory — Financial Due Diligence</div>
+      <h3>Financial Due Diligence</h3>
+      <p>Buy-side and sell-side Quality of Earnings — delivered by the senior person you spoke to, not a rotating analyst team.</p>
+    </div>
+    <div class="modal-body">
+      <p>Most FDD in the mid-market is delivered by large teams with expensive overheads and rotating analysts who have never met the client. Leverage Strategic offers the same depth — with direct senior involvement throughout, and the sector knowledge that makes findings actionable.</p>
+      <h5>What FDD covers</h5>
+      <table class="scope-table">
+        <tr><td>Quality of Earnings</td><td>Revenue sustainability, one-time items, and normalised EBITDA — rigorous and defensible.</td></tr>
+        <tr><td>Revenue Analysis</td><td>Breakdown by customer, channel, product, geography. Churn, concentration risk, and forward revenue visibility.</td></tr>
+        <tr><td>Working Capital Review</td><td>Normalised working capital, seasonality adjustments, and locked box considerations.</td></tr>
+        <tr><td>Net Debt Review</td><td>Debt-like items, contingent liabilities, and cash-like adjustments affecting the final purchase price.</td></tr>
+        <tr><td>Cost Structure</td><td>Fixed vs. variable costs, management adjustments, and run-rate cost base for the acquiring entity.</td></tr>
+        <tr><td>Risk Identification</td><td>Red flags, deal risks, and R&amp;W considerations — so you enter negotiation with open eyes.</td></tr>
+      </table>
+      <h5>Delivery models &amp; pricing</h5>
+      <div class="modes-mini">
+        <div class="mode-mini">
+          <div class="mode-mini-tag">Model 1 — Partner Direct</div>
+          <h6>Full senior involvement</h6>
+          <p>Managing partner personally leads and delivers the entire FDD engagement. For sensitive deals where seniority is required throughout.</p>
+          <div class="mode-mini-price">From $20,000 · Scope confirmed at scoping call</div>
+        </div>
+        <div class="mode-mini">
+          <div class="mode-mini-tag">Model 2 — Partner-Led, Team Executed</div>
+          <h6>Senior-overseen execution</h6>
+          <p>Managing partner leads scoping, findings, and QoE sign-off. Specialist team handles the underlying analysis. Faster turnaround, same rigour.</p>
+          <div class="mode-mini-price">From $15,000 · Scope confirmed at scoping call</div>
+        </div>
+      </div>
+      <div class="modal-cta">
+        <p><strong>Received an LOI? Evaluating an acquisition?</strong> Talk before the diligence clock starts — the first conversation is free.</p>
+        <a href="https://calendly.com/hello-leverageadvisory/scoping" target="_blank" rel="noopener" class="btn-gold">Book a Scoping Call</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- M&A -->
+<div class="modal-overlay" id="modal-ma">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('ma')">✕</button>
+    <div class="modal-hero">
+      <div class="modal-tag">Strategic Support — Transaction Advisory</div>
+      <h3>Transaction Advisory</h3>
+      <p>Financial, commercial, and structural transaction support — for founders buying, selling, or merging, where the wrong structure costs more than the advisory fee.</p>
+    </div>
+    <div class="modal-body">
+      <p>Most founders only do one or two significant transactions in their lifetime. Most advisors have done hundreds. That asymmetry is where founders get hurt — on deal structure, earn-out mechanics, working capital pegs, and positions they didn't know were negotiable.</p>
+      <h5>What transaction advisory includes</h5>
+      <table class="scope-table">
+        <tr><td>LOI &amp; Deal Review</td><td>Review of deal structure proposals — earn-outs, working capital pegs, deferred consideration — so you understand what you're agreeing to before you sign.</td></tr>
+        <tr><td>Sell-Side Positioning</td><td>Financials, narrative, and information memorandum — so buyers see the strongest version of what you've built.</td></tr>
+        <tr><td>Buy-Side Support</td><td>Commercial and financial assessment of target businesses — so you enter negotiation with a clear view of value and risk.</td></tr>
+        <tr><td>Diligence Management</td><td>Coordination of the diligence process for either side — so it moves efficiently and the deal doesn't die in execution.</td></tr>
+        <tr><td>Negotiation Support</td><td>A transaction specialist in the room for key negotiation points — someone who knows what's standard, what's aggressive, and what to push back on.</td></tr>
+        <tr><td>Deal Structuring</td><td>Structure analysis across asset vs. share, earn-out design, and post-close mechanics — before you're committed to a position.</td></tr>
+      </table>
+      <h5>Delivery models &amp; pricing</h5>
+      <div class="modes-mini">
+        <div class="mode-mini">
+          <div class="mode-mini-tag">Model 1 — Partner Direct</div>
+          <h6>Full senior involvement</h6>
+          <p>Managing partner leads the entire transaction — from positioning through to close. Primary advisor, negotiation partner, deal manager.</p>
+          <div class="mode-mini-price">Retainer from $25,000 + success fee at close</div>
+        </div>
+        <div class="mode-mini">
+          <div class="mode-mini-tag">Model 2 — Partner-Led, Team Executed</div>
+          <h6>Senior-overseen execution</h6>
+          <p>Managing partner leads strategy and all key conversations. Specialist team manages process and documentation under oversight.</p>
+          <div class="mode-mini-price">Retainer from $15,000 + success fee at close</div>
+        </div>
+      </div>
+      <div class="modal-cta">
+        <p><strong>Exploring an exit, acquisition, or merger?</strong> Talk before you sign anything — the scoping call is free.</p>
+        <a href="https://calendly.com/hello-leverageadvisory/scoping" target="_blank" rel="noopener" class="btn-gold">Book a Scoping Call</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function toggleMobile(){document.getElementById('mobile-menu').classList.toggle('open')}
+
+function openModal(id){
+  const m=document.getElementById('modal-'+id);
+  if(m){m.classList.add('active');document.body.style.overflow='hidden';m.scrollTop=0;}
+}
+function closeModal(id){
+  const m=document.getElementById('modal-'+id);
+  if(m){m.classList.remove('active');document.body.style.overflow='';}
+}
+document.querySelectorAll('.modal-overlay').forEach(o=>{
+  o.addEventListener('click',e=>{if(e.target===o){o.classList.remove('active');document.body.style.overflow='';}});
+});
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape')document.querySelectorAll('.modal-overlay.active').forEach(o=>{o.classList.remove('active');document.body.style.overflow='';});
+});
+
+/* fade-up observer */
+(function(){
+  const io=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}});
+  },{threshold:.09,rootMargin:'0px 0px -36px 0px'});
+  document.querySelectorAll('.fade-up').forEach(el=>io.observe(el));
+})();
+
+/* subtle 3D tilt */
+document.addEventListener('mousemove',e=>{
+  document.querySelectorAll('.tilt-card').forEach(card=>{
+    const r=card.getBoundingClientRect();
+    if(e.clientX<r.left-60||e.clientX>r.right+60||e.clientY<r.top-60||e.clientY>r.bottom+60){card.style.transform='';return;}
+    const dx=(e.clientX-(r.left+r.width/2))/r.width;
+    const dy=(e.clientY-(r.top+r.height/2))/r.height;
+    card.style.transform=`perspective(800px) rotateY(${dx*3.5}deg) rotateX(${-dy*3.5}deg) translateZ(4px)`;
+  });
+});
+document.addEventListener('mouseleave',()=>{document.querySelectorAll('.tilt-card').forEach(c=>c.style.transform='');});
+</script>
+</body>
+</html>
