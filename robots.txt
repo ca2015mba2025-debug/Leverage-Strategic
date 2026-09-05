@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://leveragestrategic.com/sitemap.xml
