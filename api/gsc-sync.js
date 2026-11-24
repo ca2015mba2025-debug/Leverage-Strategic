@@ -23,7 +23,7 @@ module.exports = async function handler(req, res) {
       body: JSON.stringify({ startDate: day(start), endDate: day(end), dimensions: ['date', 'query', 'page', 'country', 'device'], rowLimit: 25000 }) });
     const j = await r.json(); const rows = (j.rows || []).map((x) => ({ site: 'leverage-strategic', date: x.keys[0], query: x.keys[1], page: x.keys[2], country: x.keys[3], device: x.keys[4], clicks: x.clicks, impressions: x.impressions, ctr: x.ctr, position: x.position }));
     for (let i = 0; i < rows.length; i += 500) {
-      const u = await fetch(process.env.SUPABASE_URL + '/rest/v1/site_search_console?on_conflict=site,date,query,page,country,device', { method: 'POST',
+      const u = await fetch(process.env.SUPABASE_URL + '/rest/v1/ls_search_console?on_conflict=site,date,query,page,country,device', { method: 'POST',
         headers: { apikey: process.env.SUPABASE_SERVICE_ROLE_KEY, Authorization: 'Bearer ' + process.env.SUPABASE_SERVICE_ROLE_KEY, 'Content-Type': 'application/json', Prefer: 'resolution=merge-duplicates,return=minimal' }, body: JSON.stringify(rows.slice(i, i + 500)) });
       if (!u.ok) throw new Error('db');
     }
