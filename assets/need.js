@@ -36,7 +36,7 @@ var f=$('#nf');if(f){var started=0;f.addEventListener('focusin',function(){if(!s
  try{var vid=localStorage.getItem('lv_vid')||'';fetch('/api/lead',{method:'POST',keepalive:true,headers:{'Content-Type':'application/json'},body:JSON.stringify({name:d.name,email:d.email,company:d.company,need:d.need,timeline:d.timeline,delivery:d.delivery,message:d.message,path:location.pathname,visitor_id:vid,referrer:document.referrer})}).catch(function(){})}catch(x){}
  fetch(FS,{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(d)}).then(function(r){return r.json()}).then(function(j){if(j.success===true||j.success==='true'){f.reset();btn.disabled=false;ok.textContent='Thank you. We will reply within one business day.';window.lvTrack&&lvTrack('lead',{kind:'need',need:NEEDS[cur].k})}else throw 0}).catch(function(){btn.disabled=false;ok.innerHTML='Something went wrong. Please email <a href="mailto:hello@leveragestrategic.com" style="color:#EBD58F">hello@leveragestrategic.com</a>.'})})}
 // Google Analytics 4: paste the measurement ID (G-XXXXXXXXXX) below. Loads only after the visitor accepts analytics.
-var GA='';
+var GA='G-WTMXSR7PJH';
 function loadGA(){if(!GA||window.__ga)return;window.__ga=1;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+GA;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config',GA,{anonymize_ip:true})}
 try{if(localStorage.getItem('lv_consent')==='yes')loadGA()}catch(e){}
 document.addEventListener('click',function(e){var c=e.target.closest('[data-c="yes"]');if(c)setTimeout(loadGA,50)});
