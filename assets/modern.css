@@ -128,3 +128,6 @@ a.cd:hover{background:var(--glass2)}
 .cta .b2.lt2{border-color:var(--gold);color:var(--gold)}
 @media(max-width:920px){.inds,.imp{grid-template-columns:1fr}.sitr th,.sitr td{padding:12px}}
 html,body{overflow-x:clip;max-width:100%}.mq{max-width:100vw}.tg,.mk,.chips2{max-width:100%}
+.ck .btn.b2{background:transparent;color:var(--g3);border-color:var(--g2)}.ck .btn.b2:hover{background:#ffffff14}.mh h1{font-size:clamp(40px,5.2vw,68px)}
+.ms.ivory .ch[aria-selected=true],.ms.cream .ch[aria-selected=true]{background:linear-gradient(115deg,#6B1736,#7D2142);color:#F7E8B0;border-color:#6B1736;font-weight:600;box-shadow:0 10px 26px #6b173644}.ms.ivory .ch,.ms.cream .ch{box-shadow:0 2px 8px #6b17360d}.ms.ivory .ch:hover,.ms.cream .ch:hover{border-color:var(--m);color:var(--b)}.ms.ivory .pc,.ms.cream .pc{border-top:4px solid var(--g2)}
+.ms:not(.ivory):not(.cream):not(.alt){background:#2A0615}
